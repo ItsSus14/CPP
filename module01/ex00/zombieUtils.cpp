@@ -1,0 +1,14 @@
+#include "zombieUtils.hpp"
+#include <string>
+
+Zombie	*newZombie(std::string name)
+{
+	Zombie *zombie = new Zombie(name);
+	return zombie;
+}
+
+void	randomChump(std::string name)
+{
+	Zombie zombie(name);
+	zombie.announce();
+}
